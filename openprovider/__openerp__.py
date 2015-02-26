@@ -1,10 +1,30 @@
+# -*- coding: utf-8 -*-
 {
     'name': "openprovider",
-    'version': '1.0',
-    'depends': ['base'],
-    'author': "Royendgel Silberie",
-    'category': 'Category',
+
+    'summary': """
+        Openprovider integration""",
+
     'description': """
-    Open provider module for ofoo
+        Openprovider integration with Odoo
     """,
+
+    'author': "Royendgel Silberie",
+    'website': "https://github.com/royendgel/odoo_openprovider",
+
+    'category': 'Extra Tools',
+    'version': '0.2',
+
+
+    'depends': ['base'],
+
+    # always loaded
+    'data': [
+        # 'security/ir.model.access.csv',
+        'templates.xml',
+    ],
+    # only loaded in demonstration mode
+    'demo': [
+        'demo.xml',
+    ],
 }
